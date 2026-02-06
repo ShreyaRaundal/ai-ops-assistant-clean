@@ -1,72 +1,110 @@
+AI Operations Assistant
 1️⃣ Project Overview
-AI Operations Assistant that accepts natural language tasks, plans steps using an LLM,
-executes real APIs, and verifies results using a multi-agent architecture.
+
+AI Operations Assistant is a multi-agent GenAI system that accepts natural-language tasks, plans execution steps using an LLM, calls real-world APIs, and verifies results before returning a structured response.
+The system runs locally and demonstrates agent-based reasoning, API orchestration, and LLM integration.
 
 2️⃣ Architecture
 
-Mention all three agents clearly:
+The system follows a Planner–Executor–Verifier multi-agent architecture.
 
-Planner Agent – Converts user task into structured JSON plan using LLM
+🔹 Planner Agent
 
-Executor Agent – Executes steps and calls real APIs
+Uses an LLM (Groq) for reasoning
 
-Verifier Agent – Validates completeness and formats final output
+Converts user input into a structured JSON execution plan
 
-⚠️ This maps directly to their evaluation rubric.
+Decides:
+
+Which tools to use
+
+Actions to perform
+
+Parameters required
+
+🔹 Executor Agent
+
+Reads the plan step-by-step
+
+Calls real third-party APIs
+
+Collects raw responses from each tool
+
+🔹 Verifier Agent
+
+Validates completeness of results
+
+Normalizes API responses
+
+Formats the final structured output
+<img width="703" height="484" alt="image" src="https://github.com/user-attachments/assets/a53710f2-cd8e-4995-be25-0d4b0016cac4" />
+<img width="589" height="452" alt="image" src="https://github.com/user-attachments/assets/c4f64cf5-61ee-4834-8e6a-d3207280255b" />
+
 
 3️⃣ APIs Used
 
-Explicit list (must-have):
+The project integrates real third-party APIs:
 
-Groq LLM API (for planning & reasoning)
+Groq LLM API – Task planning and reasoning
 
-GitHub REST API (repository search)
+GitHub REST API – Repository search and metadata
 
-OpenWeather API (current weather)
+OpenWeather API – Current weather data
 
 4️⃣ Setup Instructions (Copy-Paste Safe)
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python -m uvicorn main:app --reload
 
 5️⃣ Environment Variables
 
-Show example only (no real key):
+Create a .env file using .env.example.
 
 GROQ_API_KEY=your_groq_api_key
-OPENWEATHER_API_KEY=your_openweather_key
+OPENWEATHER_API_KEY=your_openweather_api_key
+https://console.groq.com/keys
+https://home.openweathermap.org/api_keys
+
+
+🔗 API Key Portals:
+
+https://console.groq.com/keys
+
+https://home.openweathermap.org/api_keys
 
 6️⃣ Example Prompts (VERY IMPORTANT)
 
-Include 3–5 prompts, for example:
+You can test the system with prompts such as:
 
 Find top Python repositories on GitHub and weather in Pune
 
 Get JavaScript repositories with most stars and weather in Mumbai
 
-Show trending Python repos and current weather in Delhi
+Show trending Python repositories and current weather in Delhi
 
 7️⃣ How to Test
 
-Mention:
+Start the server:
 
+python -m uvicorn main:app --reload
+
+
+Open Swagger UI:
 http://127.0.0.1:8000/docs
 
-/run endpoint with task query param
+Call the /run endpoint with a task query parameter.
+Example UI:
+http://127.0.0.1:8000/docs
+<img width="1365" height="755" alt="image" src="https://github.com/user-attachments/assets/42d5fedb-5441-457c-9cf9-322c4a7def77" />
+<img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/13b39d68-3151-494f-b4ca-84c503d6c224" />
 
 8️⃣ Limitations / Trade-offs
 
-Add 2–3 honest points:
+Sequential execution (no parallel API calls)
 
-Sequential execution (no parallelism)
+No caching of API responses
 
-No caching
+Limited retry logic on API failures
 
-Limited error retries
-
-This actually increases your score.
-
-https://console.groq.com/keys
-
-https://home.openweathermap.org/api_keys
+These trade-offs were made to keep the system simple, readable, and beginner-friendly.
