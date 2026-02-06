@@ -64,6 +64,8 @@ Create a .env file using .env.example.
 
 GROQ_API_KEY=your_groq_api_key
 OPENWEATHER_API_KEY=your_openweather_api_key
+<img width="635" height="51" alt="image" src="https://github.com/user-attachments/assets/c851d711-5576-41a1-8a89-7fc790073b4f" />
+
 
 https://console.groq.com/keys
 https://home.openweathermap.org/api_keys
@@ -110,6 +112,15 @@ No caching of API responses
 Limited retry logic on API failures
 
 These trade-offs were made to keep the system simple, readable, and beginner-friendly.
+
+
+<img width="1366" height="688" alt="image" src="https://github.com/user-attachments/assets/98f62ffb-72c7-401c-a0ba-2079623a556a" />
+
+<img width="1346" height="671" alt="image" src="https://github.com/user-attachments/assets/cad3f64c-d8fe-4c24-a42c-febb3b408cc7" />
+
+<img width="1366" height="680" alt="image" src="https://github.com/user-attachments/assets/2c5db2b0-1ed9-4d0e-876a-323a07a0a00c" />
+
+
 
 
 
