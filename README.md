@@ -69,3 +69,4 @@ This actually increases your score.
 
 https://console.groq.com/keys
 
+https://home.openweathermap.org/api_keys
