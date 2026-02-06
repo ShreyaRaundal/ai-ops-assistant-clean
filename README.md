@@ -37,9 +37,8 @@ Validates completeness of results
 Normalizes API responses
 
 Formats the final structured output
-<img width="703" height="484" alt="image" src="https://github.com/user-attachments/assets/a53710f2-cd8e-4995-be25-0d4b0016cac4" />
-<img width="589" height="452" alt="image" src="https://github.com/user-attachments/assets/c4f64cf5-61ee-4834-8e6a-d3207280255b" />
-
+<img width="814" height="454" alt="image" src="https://github.com/user-attachments/assets/05edff5d-87be-43d1-ab2e-89381b8e2adb" />
+<img width="942" height="459" alt="image" src="https://github.com/user-attachments/assets/227272fa-3b1d-4bf1-a0a0-74d2a2aef134" />
 
 3️⃣ APIs Used
 
@@ -108,3 +107,4 @@ No caching of API responses
 Limited retry logic on API failures
 
 These trade-offs were made to keep the system simple, readable, and beginner-friendly.
+
