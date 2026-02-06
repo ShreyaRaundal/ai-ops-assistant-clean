@@ -1,4 +1,6 @@
 AI Operations Assistant
+
+
 1️⃣ Project Overview
 
 AI Operations Assistant is a multi-agent GenAI system that accepts natural-language tasks, plans execution steps using an LLM, calls real-world APIs, and verifies results before returning a structured response.
@@ -107,4 +109,5 @@ No caching of API responses
 Limited retry logic on API failures
 
 These trade-offs were made to keep the system simple, readable, and beginner-friendly.
+
 
