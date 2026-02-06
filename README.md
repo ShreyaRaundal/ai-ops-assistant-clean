@@ -66,3 +66,6 @@ No caching
 Limited error retries
 
 This actually increases your score.
+
+https://console.groq.com/keys
+
