@@ -100,6 +100,8 @@ http://127.0.0.1:8000/docs
 Call the /run endpoint with a task query parameter.
 Example UI:
 http://127.0.0.1:8000/docs
+![Uploading image.png…]()
+
 <img width="1365" height="755" alt="image" src="https://github.com/user-attachments/assets/42d5fedb-5441-457c-9cf9-322c4a7def77" />
 <img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/13b39d68-3151-494f-b4ca-84c503d6c224" />
 
@@ -119,6 +121,7 @@ These trade-offs were made to keep the system simple, readable, and beginner-fri
 <img width="1346" height="671" alt="image" src="https://github.com/user-attachments/assets/cad3f64c-d8fe-4c24-a42c-febb3b408cc7" />
 
 <img width="1366" height="680" alt="image" src="https://github.com/user-attachments/assets/2c5db2b0-1ed9-4d0e-876a-323a07a0a00c" />
+
 
 
 
